@@ -66,6 +66,9 @@ div:hover {
   50% {
     right: 30%;
   }
+  55% {
+    bottom: 30%;
+  }
   75% {
     bottom: 50%;
   }
