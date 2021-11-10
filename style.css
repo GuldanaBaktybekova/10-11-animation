@@ -19,7 +19,7 @@ div {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-delay: 2s, 0s, 0s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: 1.2s cubic-bezier(.92,.55,.19,.85);
 
 }
 div:hover {
