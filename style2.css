@@ -51,5 +51,7 @@ div::before {
     transform: scale(1.2);
   }
 }
-
+body {
+  background-color: pink;
+}
 
