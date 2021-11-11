@@ -4,8 +4,8 @@ div {
   position: absolute;
   margin-left: -50px;
   margin-top: -50px;
-  top: 70%;
-  left: 70%;
+  top: 50%;
+  left: 50%;
 
   background-color: red;
   transform: rotate(50deg);
@@ -51,4 +51,5 @@ div::before {
     transform: scale(1.2);
   }
 }
+
 
