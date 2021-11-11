@@ -2,6 +2,7 @@ body {
   margin:0;
 }
 div {
+  border-radius: 50px 50px ;
   width: 50px;
   height: 50px;
  
@@ -14,7 +15,7 @@ div {
 
   background-color: tomato;
   animation: color-shift, move-sideways 3s infinite alternate ease-in-out;
-  animation-name: color-shift, move-sideways, move-updown;
+  animation-name: color-shift, move-sideways, move-updown, scale;
   animation-duration: 2s, 2s, 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -22,10 +23,7 @@ div {
   animation-timing-function: 1.2s cubic-bezier(.92,.55,.19,.85);
 
 }
-div:hover {
-  /*остановка при наведении*/
-  animation-play-state: paused;
-}
+
 
 @keyframes color-shift {
   0% {
@@ -72,14 +70,21 @@ div:hover {
   50% {
     right: 30%;
   }
-  55% {
-    bottom: 30%;
-  }
-  75% {
-    bottom: 50%;
-  }
+ 
+  
   100% {
     top: 75%;
   }
 }
-@keyframes 
+@keyframes scale {
+ 0% {
+ transform: scale(1);
+ }
+ 50% {
+   transform: scale(2);
+ }
+ 100% {
+   transform: scale(1);
+ }  
+ /*rotate-крутит*/
+}
